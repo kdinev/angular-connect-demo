@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { IGX_LIST_DIRECTIVES, IgxIconComponent, IGX_GRID_DIRECTIVES } from '@infragistics/igniteui-angular';
+import { IGX_LIST_DIRECTIVES, IgxIconComponent } from '@infragistics/igniteui-angular';
 import { ChildViewComponent } from './child-view.component';
 
 describe('ChildViewComponent', () => {
@@ -12,7 +12,7 @@ describe('ChildViewComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ChildViewComponent, NoopAnimationsModule, FormsModule, HttpClientTestingModule, IGX_LIST_DIRECTIVES, IgxIconComponent, IGX_GRID_DIRECTIVES]
+      imports: [ChildViewComponent, NoopAnimationsModule, FormsModule, HttpClientTestingModule, IGX_LIST_DIRECTIVES, IgxIconComponent]
     })
     .compileComponents();
 
